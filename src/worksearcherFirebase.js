@@ -39,7 +39,7 @@ let allSavedAds = [];
 let allSaveAdslength = [];
 let flagAds = [true];
 console.log(flagAds);
-let usernumber, useremail, userfirstname, userlastname,userPhone;
+let usernumber, useremail, userfirstname, userlastname, userPhone;
 
 const adColRef = collection(db, "Ads");
 const docAllusers = collection(db, "users");
@@ -129,7 +129,7 @@ getDocs(adColRef)
           console.log(Thum);
           console.log(Loc);
           console.log(Per);
-      
+
           if (Thum != "0" && Loc != "0" && Per != "0") {
             flag = 1;
             // alert("flag=" + flag);
@@ -183,30 +183,26 @@ getDocs(adColRef)
           console.log(flag);
           switch (flag) {
             case 0:
-              
-                $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
-                    Ads[index].imgid +
-                    ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
-                    Ads[index].title +
-                    "</b></h5> <p class='card-text' id='cardText' dir='rtl'>" +
-                    Ads[index].des +
-                    "</p><div class='d-flex justify-content-between align-items-center'><div class='btn-group'><button id='view" +
-                    index +
-                    "' class='btn btn-sm btn-outline-secondary' data-bs-toggle='modal' data-bs-target='#modalWS'>צפה</button></div><small class='text-muted'>" +
-                    Ads[index].Date +
-                    "</small></div></div></div></div>"
-                );
-              
+              $("#try2").append(
+                "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  Ads[index].imgid +
+                  ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
+                  Ads[index].title +
+                  "</b></h5> <p class='card-text' id='cardText' dir='rtl'>" +
+                  Ads[index].des +
+                  "</p><div class='d-flex justify-content-between align-items-center'><div class='btn-group'><button id='view" +
+                  index +
+                  "' class='btn btn-sm btn-outline-secondary' data-bs-toggle='modal' data-bs-target='#modalWS'>צפה</button></div><small class='text-muted'>" +
+                  Ads[index].Date +
+                  "</small></div></div></div></div>"
+              );
+
               console.log("case0");
               break;
             case 1:
-              if (
-                Ads[index].location == Loc &&
-                Ads[index].dep == Thum
-              ) {
+              if (Ads[index].location == Loc && Ads[index].dep == Thum) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -222,12 +218,9 @@ getDocs(adColRef)
               console.log("case1");
               break;
             case 2:
-              if (
-                Ads[index].location == Loc &&
-                Ads[index].dep == Thum
-              ) {
+              if (Ads[index].location == Loc && Ads[index].dep == Thum) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -241,12 +234,9 @@ getDocs(adColRef)
               console.log("case2");
               break;
             case 3:
-              if (
-                Ads[index].dep == Thum &&
-                Ads[index].percent == Per
-              ) {
+              if (Ads[index].dep == Thum && Ads[index].percent == Per) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -260,12 +250,9 @@ getDocs(adColRef)
               console.log("case3");
               break;
             case 4:
-              if (
-                Ads[index].location == Loc &&
-                Ads[index].percent == Per
-              ) {
+              if (Ads[index].location == Loc && Ads[index].percent == Per) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -281,7 +268,7 @@ getDocs(adColRef)
             case 5:
               if (Ads[index].dep == Thum) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -297,7 +284,7 @@ getDocs(adColRef)
             case 6:
               if (Ads[index].location == Loc) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -313,7 +300,7 @@ getDocs(adColRef)
             case 7:
               if (Ads[index].percent == Per) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -356,7 +343,7 @@ getDocs(adColRef)
               // document.querySelector("#WSpercent").innerHTML =
               //   Ads[index].percent;
               document.querySelector("#WSimg").src =
-                "/dist/img/occpics/occ" + Ads[index].imgid + ".jpeg";
+                "img/occpics/occ" + Ads[index].imgid + ".jpeg";
               adsNum = index;
               const updateViews = doc(db, "Ads", Ads[index].id);
               updateDoc(updateViews, {
@@ -431,25 +418,25 @@ getDocs(adColRef)
       if (bottonSendCV) {
         bottonSendCV.addEventListener("click", function () {
           let linkU = document.getElementById("CVid").value;
-            console.log(true);
-            console.log(linkU);
-            console.log(logEmail);
-            console.log(Ads[adsNum].id);
-            console.log(Ads[adsNum].emailofemployer);
-            const addSendLinks = collection(db, "Sendedlinks");
-            addDoc(addSendLinks, {
-              emailofemployer: Ads[adsNum].emailofemployer,
-              idOfAds: Ads[adsNum].id,
-              nameOfsender: userfirstname,
-              downloadLink: linkU,
-              emailOfSender: logEmail,
-              imgid: Ads[adsNum].imgid,
-              phoneNumber: userPhone,
-            }).then(() => {
-              console.log("הודעה הועברה למעסיק");
-            });
-            document.getElementById("cvDiv").style.display = "none";
-          })
+          console.log(true);
+          console.log(linkU);
+          console.log(logEmail);
+          console.log(Ads[adsNum].id);
+          console.log(Ads[adsNum].emailofemployer);
+          const addSendLinks = collection(db, "Sendedlinks");
+          addDoc(addSendLinks, {
+            emailofemployer: Ads[adsNum].emailofemployer,
+            idOfAds: Ads[adsNum].id,
+            nameOfsender: userfirstname,
+            downloadLink: linkU,
+            emailOfSender: logEmail,
+            imgid: Ads[adsNum].imgid,
+            phoneNumber: userPhone,
+          }).then(() => {
+            console.log("הודעה הועברה למעסיק");
+          });
+          document.getElementById("cvDiv").style.display = "none";
+        });
       }
     });
   })

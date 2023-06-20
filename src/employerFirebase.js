@@ -102,7 +102,7 @@ getDocs(adColRef)
       if (Ads[index].emailofemployer == useremail) {
         countAds++;
         $("#try1").append(
-          "<div class='col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/dist/img/occpics/occ" +
+          "<div class='col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
             Ads[index].imgid +
             ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
             Ads[index].title +
@@ -178,13 +178,15 @@ getDocs(adColRef)
             console.log("checkit" + i);
             console.log(sended[i].downloadLink);
             $("#box").append(
-              "<div class='added1 notifications-item'> <img src='/dist/img/occpics/occ" +
+              "<div class='added1 notifications-item'> <img src='img/occpics/occ" +
                 sended[i].imgid +
                 ".jpeg' alt='img'> <div class='text mx-2'><h4>המשתמש " +
                 sended[i].nameOfsender +
                 " הגיש פנייה למודעתך</h4>  <p><h4>תוכן הפנייה: " +
                 sended[i].downloadLink +
-                "</h4></p> <h4>מספר טלפון ליצירת קשר: " + sended[i].phoneNumber+"<h4></div><i id='notidelete" +
+                "</h4></p> <h4>מספר טלפון ליצירת קשר: " +
+                sended[i].phoneNumber +
+                "<h4></div><i id='notidelete" +
                 i +
                 "' class='mt-4 mx-3 fa-regular fa-trash-can'></i> </div>"
             );
@@ -241,7 +243,7 @@ getDocs(adColRef)
             Ads[index].viewsCount + " <i class='fa-regular fa-eye'></i>";
           document.querySelector("#Mdep").innerHTML = Ads[index].dep;
           document.querySelector("#Mimg").src =
-            "/dist/img/occpics/occ" + Ads[index].imgid + ".jpeg";
+            "dist/img/occpics/occ" + Ads[index].imgid + ".jpeg";
         });
       }
 
