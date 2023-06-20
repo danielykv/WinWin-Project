@@ -28,20 +28,20 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "start": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JobMeister/Project-1.git"
+    "url": "git+https://github.com/danielykv/WinWin-Project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JobMeister/Project-1/issues"
+    "url": "https://github.com/danielykv/WinWin-Project/issues"
   },
-  "homepage": "https://github.com/JobMeister/Project-1#readme",
+  "homepage": "https://github.com/danielykv/WinWin-Project#readme",
   "description": "jobs",
   "browserslist": {
     "production": [
