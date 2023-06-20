@@ -142,7 +142,7 @@ getDocs(adColRef)
             document.querySelector("#WSdep").innerHTML = Ads[index].dep;
             document.querySelector("#WSpercent").innerHTML = Ads[index].percent;
             document.querySelector("#WSimg").src =
-              "img/occpics/occ" + Ads[index].imgid + ".jpeg";
+              "/img/occpics/occ" + Ads[index].imgid + ".jpeg";
           });
         }
       }

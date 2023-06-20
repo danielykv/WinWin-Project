@@ -102,7 +102,7 @@ getDocs(adColRef)
       if (Ads[index].emailofemployer == useremail) {
         countAds++;
         $("#try1").append(
-          "<div class='col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+          "<div class='col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
             Ads[index].imgid +
             ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
             Ads[index].title +
@@ -121,7 +121,7 @@ getDocs(adColRef)
     }
     if (countAds == 0) {
       $("#non").append(
-        "<div class = 'd-flex justify-content-center'> <h3 dir='rtl'>זיהינו שעוד לא פירסמת מודעה באתרנו! תוכל ליצור מודעה חדשה <a href='createad.html'>כאן</a></h3></div><div class ='d-flex justify-content-center'> <img class='d-flex justify-content-center' src='img/noads.png' alt='nonads' style=' width: 50%;'</div>"
+        "<div class = 'd-flex justify-content-center'> <h3 dir='rtl'>זיהינו שעוד לא פירסמת מודעה באתרנו! תוכל ליצור מודעה חדשה <a href='createad.html'>כאן</a></h3></div><div class ='d-flex justify-content-center'> <img class='d-flex justify-content-center' src='/img/noads.png' alt='nonads' style=' width: 50%;'</div>"
       );
     } else {
       document.querySelector("#adC").innerHTML =
@@ -178,7 +178,7 @@ getDocs(adColRef)
             console.log("checkit" + i);
             console.log(sended[i].downloadLink);
             $("#box").append(
-              "<div class='added1 notifications-item'> <img src='img/occpics/occ" +
+              "<div class='added1 notifications-item'> <img src='/img/occpics/occ" +
                 sended[i].imgid +
                 ".jpeg' alt='img'> <div class='text mx-2'><h4>המשתמש " +
                 sended[i].nameOfsender +
@@ -243,7 +243,7 @@ getDocs(adColRef)
             Ads[index].viewsCount + " <i class='fa-regular fa-eye'></i>";
           document.querySelector("#Mdep").innerHTML = Ads[index].dep;
           document.querySelector("#Mimg").src =
-            "img/occpics/occ" + Ads[index].imgid + ".jpeg";
+            "/img/occpics/occ" + Ads[index].imgid + ".jpeg";
         });
       }
 

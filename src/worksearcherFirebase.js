@@ -184,7 +184,7 @@ getDocs(adColRef)
           switch (flag) {
             case 0:
               $("#try2").append(
-                "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                   Ads[index].imgid +
                   ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                   Ads[index].title +
@@ -202,7 +202,7 @@ getDocs(adColRef)
             case 1:
               if (Ads[index].location == Loc && Ads[index].dep == Thum) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -220,7 +220,7 @@ getDocs(adColRef)
             case 2:
               if (Ads[index].location == Loc && Ads[index].dep == Thum) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -236,7 +236,7 @@ getDocs(adColRef)
             case 3:
               if (Ads[index].dep == Thum && Ads[index].percent == Per) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -252,7 +252,7 @@ getDocs(adColRef)
             case 4:
               if (Ads[index].location == Loc && Ads[index].percent == Per) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -268,7 +268,7 @@ getDocs(adColRef)
             case 5:
               if (Ads[index].dep == Thum) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -284,7 +284,7 @@ getDocs(adColRef)
             case 6:
               if (Ads[index].location == Loc) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -300,7 +300,7 @@ getDocs(adColRef)
             case 7:
               if (Ads[index].percent == Per) {
                 $("#try2").append(
-                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='img/occpics/occ" +
+                  "<div class='Added col-md-4'> <div class='card mb-4 box-shadow'><img class='card-img-top' src='/img/occpics/occ" +
                     Ads[index].imgid +
                     ".jpeg' alt='Thumbnail [100%x225]' style='height: 225px; width: 100%; display: block;' data-holder-rendered='true'><div class='card-body'> <h5 id='cardHeader' dir='rtl'><b>" +
                     Ads[index].title +
@@ -343,7 +343,7 @@ getDocs(adColRef)
               // document.querySelector("#WSpercent").innerHTML =
               //   Ads[index].percent;
               document.querySelector("#WSimg").src =
-                "img/occpics/occ" + Ads[index].imgid + ".jpeg";
+                "/img/occpics/occ" + Ads[index].imgid + ".jpeg";
               adsNum = index;
               const updateViews = doc(db, "Ads", Ads[index].id);
               updateDoc(updateViews, {
