@@ -121,7 +121,7 @@ getDocs(adColRef)
     }
     if (countAds == 0) {
       $("#non").append(
-        "<div class = 'd-flex justify-content-center'> <h3 dir='rtl'>זיהינו שעוד לא פירסמת מודעה באתרנו! תוכל ליצור מודעה חדשה <a href='createad.html'>כאן</a></h3></div><div class ='d-flex justify-content-center'> <img class='d-flex justify-content-center' src='/dist/img/noads.png' alt='nonads' style=' width: 50%;'</div>"
+        "<div class = 'd-flex justify-content-center'> <h3 dir='rtl'>זיהינו שעוד לא פירסמת מודעה באתרנו! תוכל ליצור מודעה חדשה <a href='createad.html'>כאן</a></h3></div><div class ='d-flex justify-content-center'> <img class='d-flex justify-content-center' src='img/noads.png' alt='nonads' style=' width: 50%;'</div>"
       );
     } else {
       document.querySelector("#adC").innerHTML =
@@ -243,7 +243,7 @@ getDocs(adColRef)
             Ads[index].viewsCount + " <i class='fa-regular fa-eye'></i>";
           document.querySelector("#Mdep").innerHTML = Ads[index].dep;
           document.querySelector("#Mimg").src =
-            "dist/img/occpics/occ" + Ads[index].imgid + ".jpeg";
+            "img/occpics/occ" + Ads[index].imgid + ".jpeg";
         });
       }
 
